@@ -1,0 +1,45 @@
+$yellow: #ffd723;
+$green: #4d533c;
+$green-light: rgba(33, 56, 66, 0.6);
+$green-footer: #b6c197;
+$green-small: #b5c096;
+$grey: #d4d6d4;
+$get-started-bg: #fafafa;
+
+$offset-horizontal: 11px;
+$offset-vertical: 14px;
+
+@mixin h1 {
+    font-weight: 700;
+    font-size: 60px;
+    color: #fff;
+}
+@mixin h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    color: $green;
+}
+@mixin h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: $green;
+}
+@mixin p-text {
+    font-size: 16px;
+    font-weight: 400;
+}
+@mixin descr {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    color: $green-light;
+}
+@mixin footer-title {
+    font-weight: 600;
+    line-height: 38px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+$grid-gap: 70px;
