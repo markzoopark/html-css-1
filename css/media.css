@@ -1,10 +1,8 @@
 @media only screen and (max-width: 992px) {
   .services .services-list {
-    display: -ms-grid;
     display: grid;
     gap: 50px;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .services .services-subtitle {
     max-width: none;
@@ -14,8 +12,7 @@
   }
   .footer .footer-middle {
     gap: 10px;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .footer .footer-middle .footer-column {
     padding: 30px 0;
@@ -41,22 +38,16 @@
     padding: 50px 0;
   }
   .services .services-list {
-    display: -ms-grid;
     display: grid;
     gap: 30px;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .footer .footer-middle {
     gap: 10px;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .footer .footer-bottom {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 
