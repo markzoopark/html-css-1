@@ -1,4 +1,5 @@
 @import "./var.scss";
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
     box-sizing: border-box;
@@ -164,6 +165,7 @@ img {
         margin-bottom: 50px;
         @include h2;
         font-size: 60px;
+        line-height: 74px;
     }
     .get-started-link {
         text-transform: uppercase;
@@ -204,13 +206,16 @@ img {
         display: grid;
         gap: $grid-gap;
         grid-template-columns: repeat(4, 1fr);
-        padding-top: 60 0px;
+        padding: 60 0px;
+        border-bottom: 1px solid #5d6544;
     }
     .footer-title {
         margin: 0;
         margin-bottom: 21px;
-        padding-top: 60px;
         @include footer-title;
+    }
+    .footer-column {
+        padding: 60px 0;
     }
     .footer-column:last-child {
         position: relative;
@@ -250,3 +255,53 @@ img {
         color: #fff;
     }
 }
+.social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    .social-item:not(:last-child) {
+        margin-right: 11px;
+    }
+    .social-link {
+        display: block;
+        border-radius: 100%;
+        width: 33px;
+        height: 33px;
+        background-color: $yellow;
+        background-position: center;
+        background-size: 18px auto;
+        background-repeat: no-repeat;
+        opacity: 0.4;
+        transition: opacity 0.3s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .social-link-fb {
+        background-image: url(/img/facebook.svg);
+    }
+    .social-link-tw {
+        background-image: url(/img/twitter.svg);
+    }
+    .social-link-g {
+        background-image: url(../img/google-plus.svg);
+    }
+    .social-link-ln {
+        background-image: url(../img/linked-in.svg);
+    }
+}
+.footer-bottom {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $green-small;
+}
+@import "./media.scss";
